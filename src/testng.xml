@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suite">
+    <parameter name="firstname" value="Naga"></parameter>
+    <parameter name="lasttname" value="Rajan"></parameter>
+    <test thread-count="-1" parallel="classes" name="chromeTest">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="form.formsSel"/>
+
+        </classes>
+    </test>
+    <test thread-count="-1" parallel="classes" name="foxText" >
+        <parameter name="browserName" value="firefox"></parameter>
+        <classes>
+            <class name="form.formsSel"/>
+
+        </classes>
+    </test><!-- Test -->
+</suite> <!-- Suite -->
